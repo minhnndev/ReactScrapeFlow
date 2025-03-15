@@ -1,5 +1,5 @@
 import { cn } from "@/lib/utils";
-import { Rat } from "lucide-react";
+import { Worm } from "lucide-react";
 import Link from "next/link";
 import React from "react";
 
@@ -18,14 +18,14 @@ function Logo({
         fontSize
       )}
     >
-      <div className="rounded-xl bg-gradient-to-r from-purple-500 to-purple-600 p-2">
-        <Rat size={iconSize} className="stroke-white" />
+      <div className="rounded-xl bg-gradient-to-r from-green-500 to-green-600 p-2">
+        <Worm size={iconSize} className="stroke-white" />
       </div>
       <div>
-        <span className="bg-gradient-to-r  from-purple-500 to-purple-600 bg-clip-text text-transparent">
+        <span className="bg-gradient-to-r  from-green-500 to-green-600 bg-clip-text text-transparent">
           Flow
         </span>
-        <span className="text-stone-700 dark:text-slate-300">Reo</span>
+        <span className="text-stone-700 dark:text-slate-300">Scrape</span>
       </div>
     </Link>
   );
