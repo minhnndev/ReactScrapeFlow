@@ -24,7 +24,8 @@ export default function RootLayout({
           afterSignOutUrl={"/sign-in"}
           appearance={{
             elements: {
-              formButtonPrimary: "bg-primary hover:bg-primary/90 text-sm !shadow-none",
+              formButtonPrimary:
+                "bg-primary hover:bg-primary/90 text-sm !shadow-none",
             },
           }}
         >

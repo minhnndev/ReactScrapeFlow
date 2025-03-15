@@ -1,7 +1,7 @@
 "use  client";
 import { CreateFlowNode } from "@/lib/workflow/createFlowNode";
 import { TaskType } from "@/types/task";
-import { Workflow } from "@prisma/client";
+// import { Workflow } from "@prisma/client";
 import "@xyflow/react/dist/style.css";
 import {
   Background,
@@ -30,7 +30,7 @@ const edgeTypes = {
 };
 const snapGrid: [number, number] = [50, 50];
 const fitViewOptions = { padding: 1 };
-function FlowEditor({ workflow }: { workflow: Workflow }) {
+function FlowEditor({ workflow }: { workflow: any }) {
   const [nodes, setNodes, onNodesChange] = useNodesState<AppNode>([]);
   const [edges, setEdges, onEdgesChange] = useEdgesState<Edge>([]);
   const { setViewport, screenToFlowPosition, updateNodeData } = useReactFlow();
