@@ -6,10 +6,10 @@ import { auth } from "@clerk/nextjs/server";
 
 export async function UpdateWorkflow({
   id,
-  defination,
+  definition,
 }: {
   id: string;
-  defination: string;
+  definition: string;
 }) {
   const { userId } = auth();
   if (!userId) {
@@ -29,7 +29,7 @@ export async function UpdateWorkflow({
   }
   await prisma.workflow.update({
     data: {
-      defination,
+      definition,
     },
     where: {
       id,

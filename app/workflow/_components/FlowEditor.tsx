@@ -36,7 +36,7 @@ function FlowEditor({ workflow }: { workflow: any }) {
   const { setViewport, screenToFlowPosition, updateNodeData } = useReactFlow();
   useEffect(() => {
     try {
-      const flow = JSON.parse(workflow.defination);
+      const flow = JSON.parse(workflow.definition);
       if (!flow) return;
       setNodes(flow.nodes || []);
       setEdges(flow.edges || []);
@@ -44,7 +44,7 @@ function FlowEditor({ workflow }: { workflow: any }) {
       const { x = 0, y = 0, zoom = 1 } = flow.viewport;
       setViewport({ x, y, zoom });
     } catch (error) {}
-  }, [workflow.defination, setEdges, setNodes, setViewport]);
+  }, [workflow.definition, setEdges, setNodes, setViewport]);
 
   const onDragOver = useCallback((event: React.DragEvent) => {
     event.preventDefault();
