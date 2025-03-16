@@ -23,9 +23,9 @@ function Logo({
       </div>
       <div>
         <span className="bg-gradient-to-r  from-green-500 to-green-600 bg-clip-text text-transparent">
-          Flow
+          Scrape
         </span>
-        <span className="text-stone-700 dark:text-slate-300">Scrape</span>
+        <span className="text-stone-700 dark:text-slate-300">Flow</span>
       </div>
     </Link>
   );

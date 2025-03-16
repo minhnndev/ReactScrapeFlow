@@ -56,7 +56,7 @@ export function MobileSidebar() {
             side={"left"}
           >
             <Logo />
-            <div className="flex flex-col gap-1">
+            <div className="flex flex-col gap-2">
               {routes.map((route) => (
                 <Link
                   key={route.href}
@@ -64,7 +64,7 @@ export function MobileSidebar() {
                   className={buttonVariants({
                     variant:
                       activeRoute.href === route.href
-                        ? "sidebarAactiveItem"
+                        ? "sidebarActiveItem"
                         : "sidebarItem",
                   })}
                   onClick={() => setOpen((prev) => !prev)}
@@ -80,6 +80,7 @@ export function MobileSidebar() {
     </div>
   );
 }
+
 const DesktopSidebar = () => {
   const pathname = usePathname();
   const activeRoute =
@@ -99,8 +100,7 @@ const DesktopSidebar = () => {
       >
         <Logo />
       </div>
-      <div className="p-2">TODO CREDITS</div>
-      <div className="flex flex-col p-2">
+      <div className="flex flex-col p-2 gap-2">
         {routes.map((route) => (
           <Link
             key={route.href}
@@ -108,7 +108,7 @@ const DesktopSidebar = () => {
             className={buttonVariants({
               variant:
                 activeRoute.href === route.href
-                  ? "sidebarAactiveItem"
+                  ? "sidebarActiveItem"
                   : "sidebarItem",
             })}
           >
